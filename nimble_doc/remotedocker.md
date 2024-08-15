@@ -37,7 +37,6 @@ By default, Docker listens for commands on a Unix socket (only accessible locall
 
 #### 1.2 Secure Docker Daemon with TLS (Optional)
 
-To secure the connection between JupyterHub and the remote Docker daemon, it's recommended to use TLS.
 
 1. **USE nimble domain TLS Certificates**:
 
@@ -83,6 +82,13 @@ On the JupyterHub server, configure DockerSpawner to connect to the remote Docke
 
 
 #### 2.2 Configure JupyterHub
+
+1. Install packages and jupyterHub in development
+
+   ```bash
+   pip install -r requirements.txt
+   pip install -e .
+   ```
 
 Edit the `jupyterhub_config.py` file to configure DockerSpawner to use the remote Docker host:
 
