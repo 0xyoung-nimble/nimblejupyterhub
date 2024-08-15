@@ -35,7 +35,7 @@ By default, Docker listens for commands on a Unix socket (only accessible locall
    sudo systemctl restart docker
    ```
 
-#### 1.2 Secure Docker Daemon with TLS (Optional but Recommended)
+#### 1.2 Secure Docker Daemon with TLS (Optional)
 
 To secure the connection between JupyterHub and the remote Docker daemon, it's recommended to use TLS.
 
