@@ -115,6 +115,17 @@ Edit the `jupyterhub_config.py` file to configure DockerSpawner to use the remot
    c.DockerSpawner.extra_host_config = {
        'network_mode': 'bridge',
    }
+
+   # use Google OAuth
+   c.JupyterHub.authenticator_class = "google"
+   c.OAuthenticator.oauth_callback_url = "https://[your-domain]/hub/oauth_callback"
+   c.OAuthenticator.client_id = "[your oauth2 application id]"
+   c.OAuthenticator.client_secret = "[your oauth2 application secret]"
+
+   c.JupyterHub.log_level = 'DEBUG'
+
+   c.Authenticator.allow_all = True
+   
    ```
 
 

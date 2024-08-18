@@ -42,3 +42,4 @@ jupyterhub-proxy.pid
 examples/server-api/service-token
 
 *.hot-update*
+nimenv_jupyterhub/
